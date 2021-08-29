@@ -54,7 +54,7 @@ app.post("/send", (req, res) => {
   data.push(req.body);
   let mailOptions = {
     from: `${req.body.email}`,
-    to: "email1.com,email2,email3",
+    to: "email1,email2,email3",
     subject: `${req.body.name} Message you, From:${req.body.email}`,
     text: `Type of services Selected: ${req.body.dropdown}
           Message: ${req.body.message}
